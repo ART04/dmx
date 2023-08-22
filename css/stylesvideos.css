@@ -1,0 +1,126 @@
+
+.heading{
+   color: #f8f8f8;
+   font-size: 40px;
+   text-align: center;
+   padding: 15px;
+   background: #0dbcc2;
+}
+
+
+
+.contenedor{
+   max-width: 1200px;
+   margin:100px auto;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   gap:20px;
+}
+
+.contenedor .main-video-container{
+   flex:1 1 700px;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.contenedor .main-video-container .main-video{
+   margin-bottom: 7px;
+   border-radius: 5px;
+   width: 100%;
+}
+
+.contenedor .main-video-container .main-vid-title{
+   font-size: 20px;
+   color:#444;
+}
+
+.contenedor .video-list-container{
+   flex:1 1 350px;
+   height: 485px;
+   overflow-y: scroll;
+   border-radius: 5px;
+   box-shadow: 0 5px 15px rgba(0,0,0,.1);
+   background-color: #fff;
+   padding:15px;
+}
+
+.contenedor .video-list-container::-webkit-scrollbar{
+   width: 10px;
+}
+
+.contenedor .video-list-container::-webkit-scrollbar-track{
+   background-color: #fff;
+   border-radius: 5px;
+}
+
+.contenedor .video-list-container::-webkit-scrollbar-thumb{
+   background-color: #444;
+   border-radius: 5px;
+}
+
+.contenedor .video-list-container .list{
+   display: flex;
+   align-items: center;
+   gap:15px;
+   padding:10px;
+   background-color: #eee;
+   cursor: pointer;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+.contenedor .video-list-container .list:last-child{
+   margin-bottom: 0;
+}
+
+.contenedor .video-list-container .list.active{
+   background-color: #0dbcc2;
+}
+
+.container .video-list-container .list.active .list-title{
+   color:#fff;
+}
+
+.contenedor .video-list-container .list .list-video{
+   width: 100px;
+   border-radius: 5px;
+}
+
+.contenedor .video-list-container .list .list-title{
+   font-size: 17px;
+   color:#444;
+}
+
+@media (max-width:1200px){
+
+   .container{
+      margin:0;
+   }
+
+}
+
+@media (max-width:450px){
+
+   .contenedor .main-video-container .main-vid-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+   .contenedor .video-list-container .list{
+      flex-flow: column;
+      gap:10px;
+   }
+
+   .contenedor .video-list-container .list .list-video{
+      width: 100%;
+   }
+
+   .contenedor .video-list-container .list .list-title{
+      font-size: 15px;
+      text-align: center;
+   }
+
+}
